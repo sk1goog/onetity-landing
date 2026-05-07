@@ -1,65 +1,170 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Onetity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Onetity – Routinen im Raster</title>
+  <meta name="description" content="Onetity: Gewohnheiten und Fortschritt von Tag bis Jahr – Balance, Tracking, lokale Daten.">
   <style>
     :root {
-      color-scheme: light dark;
-      --fg: #1a1a1a;
-      --bg: #fafafa;
-      --muted: #5c5c5c;
-      --accent: #0066cc;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --fg: #f0f0f0;
-        --bg: #121212;
-        --muted: #a3a3a3;
-        --accent: #4da3ff;
-      }
+      --bg: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #98989d;
+      --accent: #64d2ff;
+      --card: #2c2c2e;
+      --border: #3a3a3c;
+      --maxw: 40rem;
     }
     * { box-sizing: border-box; }
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      min-height: 100vh;
-      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 1rem;
+    }
+    header {
+      padding: 2.5rem 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    header p.tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
     }
     main {
-      max-width: 40rem;
+      max-width: var(--maxw);
       margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
+      padding: 1.75rem 1.25rem 3rem;
     }
-    h1 { font-size: 1.75rem; font-weight: 600; margin: 0 0 0.5rem; }
-    p { margin: 0 0 1rem; color: var(--muted); }
-    a { color: var(--accent); }
-    .card {
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      color: var(--text);
+    }
+    section p {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.65rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--text);
+      font-weight: 600;
+      width: 32%;
+    }
+    td { color: var(--muted); }
+    tr:last-child th,
+    tr:last-child td { border-bottom: none; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
       margin-top: 2rem;
-      padding: 1.25rem 1.5rem;
-      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
-      border-radius: 12px;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
     }
-    .card h2 { font-size: 1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--fg); }
   </style>
 </head>
 <body>
-  <main>
+  <header>
     <h1>Onetity</h1>
-    <p>iOS‑App · Infos für App Store Connect, TestFlight und Testerinnen.</p>
+    <p class="tagline">Routinen im Raster – Gewohnheiten und Fortschritt von Tag bis Jahr.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Über die App</h2>
+      <p>
+        Onetity hilft dir, Vorhaben zuverlässig zu verfolgen: klare <strong style="color:var(--text)">Wochen-Balance</strong>,
+        <strong style="color:var(--text)">Tracking</strong> auf den Zeitebenen Tag, Woche, Monat und Jahr sowie nachvollziehbare Auswertungen –
+        ohne laute Gamification, mit ruhiger, strukturierter Oberfläche.
+      </p>
+      <p>
+        Du legst Vorhaben an, erfasst Erledigungen im Raster und siehst, wie sich Routinen über die Zeit entwickeln.
+        Alle relevanten Daten liegen <strong style="color:var(--text)">lokal auf deinem iPhone</strong>.
+        Für die Nutzung ist kein Nutzerkonto erforderlich.
+      </p>
+    </section>
 
-    <div class="card">
-      <h2>Kontakt &amp; Support</h2>
-      <p style="margin-bottom: 0.5rem">
-        Bei Fragen zur Nutzung der App oder zu TestFlight erreichst du uns unter:
+    <section>
+      <h2>Funktionen</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Balance</th>
+            <td>Wochenbezogene Übersicht – Fortschritt und Indizes (u. a. Energie, Struktur, Stabilität).</td>
+          </tr>
+          <tr>
+            <th>Tracking</th>
+            <td>Wechsel zwischen Tag, Woche, Monat und Jahr – konsistente Rasterlogik auf allen Zeitebenen.</td>
+          </tr>
+          <tr>
+            <th>Vorhaben</th>
+            <td>Anlegen und bearbeiten; Vorlagen, Symbole; Reihenfolge per Drag &amp; Drop.</td>
+          </tr>
+          <tr>
+            <th>Completion</th>
+            <td>Automatische Auswertung je nach Ziel – sichtbar in Raster und Karussell.</td>
+          </tr>
+          <tr>
+            <th>Backup &amp; Export</th>
+            <td>JSON-Export und -Import für Sicherung oder Gerätewechsel.</td>
+          </tr>
+          <tr>
+            <th>Einführung</th>
+            <td>Onboarding; optional Beispieldaten zum Erkunden der Oberfläche.</td>
+          </tr>
+          <tr>
+            <th>Erscheinungsbild</th>
+            <td>Einheitliches dunkles neutrales Grauschema; Farben aus Gewohnheiten und Indizes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Datenschutz</h2>
+      <p>
+        Daten werden primär lokal auf dem Gerät gespeichert; es gibt kein erzwungenes Cloud-Konto für die Kernfunktionen.
+        Die <strong style="color:var(--text)"><a href="datenschutz.html">Datenschutzerklärung</a></strong> (App und diese Projekt-Webseite) liegt im gleichen Ordner wie diese Seite · nach Deploy z.&nbsp;B.
+        <a href="https://sk1goog.github.io/onetity-landing/datenschutz.html">sk1goog.github.io/onetity-landing/datenschutz.html</a>
       </p>
-      <p style="margin: 0">
-        <a href="mailto:sk1goog@gmail.com">sk1goog@gmail.com</a>
+    </section>
+
+    <section>
+      <h2>Kontakt</h2>
+      <p>
+        Website und Feedback-Adresse werden ergänzt, sobald sie öffentlich genutzt werden können.
       </p>
-    </div>
+    </section>
+
+    <footer>
+      Support-Seite für die Onetity-App · Inhalt parallel zur README dieses Repositories.
+    </footer>
   </main>
 </body>
 </html>
