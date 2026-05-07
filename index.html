@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onetity</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1a1a1a;
+      --bg: #fafafa;
+      --muted: #5c5c5c;
+      --accent: #0066cc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f0f0f0;
+        --bg: #121212;
+        --muted: #a3a3a3;
+        --accent: #4da3ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      min-height: 100vh;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.75rem; font-weight: 600; margin: 0 0 0.5rem; }
+    p { margin: 0 0 1rem; color: var(--muted); }
+    a { color: var(--accent); }
+    .card {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      border-radius: 12px;
+    }
+    .card h2 { font-size: 1rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--fg); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Onetity</h1>
+    <p>iOS‑App · Infos für App Store Connect, TestFlight und Testerinnen.</p>
+
+    <div class="card">
+      <h2>Kontakt &amp; Support</h2>
+      <p style="margin-bottom: 0.5rem">
+        Bei Fragen zur Nutzung der App oder zu Testflight erreichst du uns unter:
+      </p>
+      <p style="margin: 0">
+        <a id="mailto" href="mailto:DEINE-EMAIL-HIER-EINTRAGEN@example.com">DEINE-EMAIL-HIER-EINTRAGEN@example.com</a>
+      </p>
+      <p style="margin-top: 1rem; font-size: 0.9rem">
+        Bitte ersetze die Platzhalter‑Adresse in <code>index.html</code> (und im GitHub‑Repo committen) oder nutze dieselbe Adresse in App Store Connect.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
