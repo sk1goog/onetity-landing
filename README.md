@@ -2,12 +2,13 @@
 
 Kleine statische Seite für **Marketing-URL** und **Support-URL** in App Store Connect. Enthält **keinen** App-Quellcode.
 
-- **GitHub Pages:** nach dem Push unter `https://sk1goog.github.io/onetity-landing/` (Pfad ggf. an Repo-Namen anpassen).
+- **Öffentliche URL:** https://sk1goog.github.io/onetity-landing/
 
-## Anpassen
+## Änderungen veröffentlichen
 
-1. In `index.html` die Platzhalter-E-Mail durch deine echte Support-Adresse ersetzen.
-2. Änderung committen und pushen: `git add index.html && git commit -m "Support email" && git push`
+Änderungen an `index.html` committen und pushen → GitHub Actions baut die Seite neu:
+
+`git add index.html && git commit -m "…" && git push`
 
 ## Lizenz
 
